@@ -1,13 +1,14 @@
 import Navbar from "./components/Navbar";
 
+import Home from "./components/Home";
+
+
 function App() {
   return (
-    <div className="App max-w-main mx-auto overflow-x-hidden">
-
+    <div className="App max-w-main mx-auto overflow-x-hidden relative">
         <Navbar/>
-        <p className="text-7xl text-red-400">
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
+        <Home/>
+      
 
     </div>
   );
