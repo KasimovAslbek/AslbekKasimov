@@ -8,7 +8,6 @@ function App() {
     <div className="App max-w-main mx-auto overflow-x-hidden relative">
         <Navbar/>
         <Home/>
-      
 
     </div>
   );

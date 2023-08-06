@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-=======
+
 
 @tailwind base;
 @tailwind components;
@@ -13,4 +9,3 @@
     font-family: 'Source Sans 3', sans-serif;
   }
 }
->>>>>>> 43272ca707b9e564605d1dcd2db1469e985dce5d
