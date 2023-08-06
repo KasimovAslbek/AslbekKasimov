@@ -6,6 +6,9 @@ module.exports = {
   theme: {
     
     extend: {
+      aspectRatio: {
+        'square': [1, 1], // You can define more aspect ratios if needed
+      },
       maxWidth: {
         'main': '1366px',
       },

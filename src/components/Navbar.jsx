@@ -4,7 +4,7 @@ import logo from '../images/face-mini.jpg'
 function Navbar() {
     const [menuOpen, setMenuOpen] = useState(false);
   return (
-    <div className='relative text-lg lg:text-xl xl:text-2xl font-bold  text-[#333] z-20'>
+    <div className='relative text-lg lg:text-xl xl:text-2xl font-bold  text-[#333] z-20 border-b-4'>
         <div className='flex items-center justify-between  mx-4 sm:mx-6 md:mx-11 py-6 lg:py-10 lg:mx-20 '>
             <div className='flex items-center gap-2.5  '>
                 <img className='w-10 h-10 lg:w-fit lg:h-fit rounded-full cursor-pointer' src={logo} alt="" />

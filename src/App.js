@@ -5,7 +5,7 @@ import Home from "./components/Home";
 
 function App() {
   return (
-    <div className="App max-w-main mx-auto overflow-x-hidden relative">
+    <div className="App  overflow-x-hidden relative">
         <Navbar/>
         <Home/>
 
