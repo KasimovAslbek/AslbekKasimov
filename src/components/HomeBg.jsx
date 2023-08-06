@@ -154,7 +154,7 @@ function HomeBg() {
     };
   }, []);
 
-  return (<canvas ref={canvasRef} className="h-screen -mt-20 w-full z-0"></canvas>);
+  return (<canvas ref={canvasRef} className="max-h-[1200px] h-screen -mt-20 w-full z-0"></canvas>);
 }
 
 export default HomeBg;
