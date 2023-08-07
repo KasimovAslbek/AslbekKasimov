@@ -23,7 +23,7 @@ img {
 main {
   display: grid;
   place-items: center;
-  min-height: 100vh;
+  
 }
 
 .container {
@@ -96,4 +96,24 @@ main {
   pointer-events: none;
   /* z-index: 100; */
   box-shadow: 1px 1px 1px hsl(0, 50%, 2%, .5);
+  
+}
+
+.slider-button > svg {
+  width: 30px; /* Set the desired width */
+  height: 30px; /* Set the desired height */
+}
+
+/* For responsiveness, you can use media queries */
+@media (max-width: 2500px) {
+  .slider-button > svg {
+    width: 15px; /* Set a different width for smaller screens */
+    height: 15px; /* Set a different height for smaller screens */
+  }
+}
+@media (max-width: 1536px) {
+  .slider-button > svg {
+    width: 10px; /* Set a different width for smaller screens */
+    height: 10px; /* Set a different height for smaller screens */
+  }
 }

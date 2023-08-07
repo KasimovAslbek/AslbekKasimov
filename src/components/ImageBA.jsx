@@ -9,7 +9,7 @@ function ImageBA() {
       };
     
       return (
-        <main className='w-[300px] h-[300px] min-[2500px]:w-[500px] min-[2500px]:h-[500px]'>
+        <main className='w-[200px] h-[200px] 2xl:w-[300px] 2xl:h-[300px] min-[2500px]:w-[500px] min-[2500px]:h-[500px]'>
           <div className="container">
             <div className="image-container">
               <img
@@ -37,8 +37,7 @@ function ImageBA() {
             <div className="slider-button" aria-hidden="true">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                width="30"
-                height="30"
+
                 fill="currentColor"
                 viewBox="0 0 256 256"
               >

@@ -4,7 +4,7 @@ import logo from '../images/face-mini.jpg'
 function Navbar() {
     const [menuOpen, setMenuOpen] = useState(false);
   return (
-    <div className='relative text-lg lg:text-xl xl:text-2xl font-bold  text-[#333] z-20 border-b-4'>
+    <div className='relative text-lg lg:text-xl xl:text-2xl font-bold  text-[#333] z-50 border-b-4'>
         <div className='flex items-center justify-between  mx-4 sm:mx-6 md:mx-11 py-6 lg:py-10 lg:mx-20 '>
             <div className='flex items-center gap-2.5  '>
                 <img className='w-10 h-10 lg:w-fit lg:h-fit rounded-full cursor-pointer' src={logo} alt="" />
@@ -28,7 +28,7 @@ function Navbar() {
                 </div>
             </div>
         </div>
-        <div  className={`absolute  w-full top-16 left-0 ${menuOpen ? '' : 'hidden'} `}>
+        <div  className={`absolute  z-50 bg-white  w-full top-16 left-0 ${menuOpen ? '' : 'hidden'} `}>
             <ul className='text-right flex flex-col  mt-5 shadow-xl rounded-b-md'>
                 <li className='border-t w-full py-5 '><a className='mr-4 sm:mr-6     hover:text-[#7843e9] transition-color duration-300 ease-in-out' href="https://www.example.com">Home</a></li>
                 <li className='border-t w-full py-5 '><a className='mr-4 sm:mr-6     hover:text-[#7843e9] transition-color duration-300 ease-in-out' href="https://www.example.com">Skills</a></li>
