@@ -1,5 +1,5 @@
 import React from 'react'
-import './style.css'
+import './styles/style.css'
 import face from '../images/face.jpg'
 
 function ImageBA() {

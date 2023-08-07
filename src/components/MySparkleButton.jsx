@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import './MySparkleButton.css'
+import './styles/MySparkleButton.css'
 
 const MySparkleButton = () => {
 
