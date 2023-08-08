@@ -7,7 +7,7 @@ import Skills from "./components/Skills";
 
 function App() {
   return (
-    <div className="App  overflow-hidden relative">
+    <div className="App  overflow-hidden relative bg-[#fafafa]">
         <Navbar/>
         <Home/>
         <Skills/>

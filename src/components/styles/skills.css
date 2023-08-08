@@ -42,6 +42,8 @@
     transform: translate(-50%, -50%); /* Center the container */
     height: 60vmin;
     width: 60vmin;
+    max-height: 500px; /* Added maximum height */
+    max-width: 500px; 
     list-style: none;
     opacity: 0;
     z-index: 1; /* Set a z-index */
@@ -55,7 +57,8 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    font-size: 5vmin;
+
+    font-size: clamp(2vmin, 5vmin, 2.5rem);
     font-weight: bold;
     transition: transform .5s linear, opacity .5s linear;
 }

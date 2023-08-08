@@ -183,7 +183,7 @@ class SkillDynamic extends Component {
         <li class='tag'><span class='wrap'>Anime.js</span></li>
         <li class='tag'><span class='wrap'>Github</span></li>
         <li class='tag'><span class='wrap'>Git</span></li>
-        <li class='tag'><span class='wrap'>Silenium</span></li>
+        <li class='tag'><span class='wrap'>Selenium</span></li>
         <li class='tag'><span class='wrap'>Web scraping</span></li>
         <li class='tag'><span class='wrap'>B4s</span></li>
         </ul>
