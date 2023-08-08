@@ -15,7 +15,8 @@ function Navbar() {
                 <ul className='hidden md:flex gap-7 lg:gap-12 xl:gap-16  '>
                     <li><Link className='hover:text-[#7843e9] transition-color duration-300 ease-in-out cursor-pointer' to="home"  smooth={true}  duration={800} >Home</Link></li>
                     <li><Link className='hover:text-[#7843e9] transition-color duration-300 ease-in-out cursor-pointer' to="skills"  smooth={true}  duration={800} >Skills</Link></li>
-                    <li><a className='hover:text-[#7843e9] transition-color duration-300 ease-in-out' href="https://www.example.com">Projects</a></li>
+                    <li><Link className='hover:text-[#7843e9] transition-color duration-300 ease-in-out cursor-pointer' to="projects"  smooth={true}  duration={800} >Projects</Link></li>
+
                     <li><a className='hover:text-[#7843e9] transition-color duration-300 ease-in-out' href="https://www.example.com">About</a></li>
                     <li><a className='hover:text-[#7843e9] transition-color duration-300 ease-in-out' href="https://www.example.com">Contact</a></li>
                 </ul>
@@ -33,7 +34,7 @@ function Navbar() {
             <ul className='text-right flex flex-col  mt-5 shadow-xl rounded-b-md'>
                 <li className='border-t w-full py-5 '><Link className='mr-4 sm:mr-6  cursor-pointer   hover:text-[#7843e9] transition-color duration-300 ease-in-out' to="home"  smooth={true}  duration={800} onClick={() => setMenuOpen(!menuOpen)}>Home</Link></li>
                 <li className='border-t w-full py-5 '><Link className='mr-4 sm:mr-6  cursor-pointer   hover:text-[#7843e9] transition-color duration-300 ease-in-out' to="skills"  smooth={true}  duration={800} onClick={() => setMenuOpen(!menuOpen)}>Skills</Link></li>
-                <li className='border-t w-full py-5 '><a className='mr-4 sm:mr-6     hover:text-[#7843e9] transition-color duration-300 ease-in-out' href="https://www.example.com">Projects</a></li>
+                <li className='border-t w-full py-5 '><Link className='mr-4 sm:mr-6  cursor-pointer   hover:text-[#7843e9] transition-color duration-300 ease-in-out' to="projects"  smooth={true}  duration={800} onClick={() => setMenuOpen(!menuOpen)}>Projects</Link></li>
                 <li className='border-t w-full py-5 '><a className='mr-4 sm:mr-6     hover:text-[#7843e9] transition-color duration-300 ease-in-out' href="https://www.example.com">About</a></li>
                 <li className='border-t w-full py-5 '><a className='mr-4 sm:mr-6     hover:text-[#7843e9] transition-color duration-300 ease-in-out' href="https://www.example.com">Contact</a></li>
             </ul>

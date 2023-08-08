@@ -2,6 +2,7 @@ import React from 'react'
 import HomeBg from './HomeBg'
 import ImageBA from './ImageBA'
 import MySparkleButton from './MySparkleButton'
+import { Link } from 'react-scroll';
 
 
 function Home() {
@@ -17,7 +18,7 @@ function Home() {
                 <h1 className=' bg-[#fafafa] w-fit mx-auto text-3xl sm:text-4xl 2xl:text-5xl  min-[2500px]:text-6xl mb-10 font-bold '>HEY, I'M  <span className='bg-green-400 px-3 block sm:inline-block'>ASLBEK KASIMOV</span></h1>
                 <p  className=' bg-[#fafafa] w-fit mx-auto'>Frontend Web Developer passionate about crafting captivating user experiences.  </p>
                 <p  className=' bg-[#fafafa] w-fit mx-auto mb-10 lg:mb-16'>Let's build something remarkable together!😊</p>
-                <MySparkleButton/>
+                <Link to="projects"  smooth={true}  duration={800}><MySparkleButton/></Link>
             </div>
               
         </div>

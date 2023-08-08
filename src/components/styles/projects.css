@@ -1,0 +1,113 @@
+.projects{
+    width:100vw;
+    height:80vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+  }
+  .pslider {
+    height: 750px;
+    width:100vw;
+    display: flex;
+    perspective: 1000px;
+    position: relative;
+    align-items:center;
+  }
+  .box1{      background:url('/src/images/project1.png');
+    background-size:cover;
+    background-position:center center;
+    
+}
+    
+  .box2{
+  background:url('/src/images/project2.png');
+    background-size:cover;
+    background-position:center center;}
+  .box3{
+  background:url('/src/images/project3.png');
+    background-size:cover;
+    background-position:center center;}
+  .box4{
+  background:url('/src/images/project4.png');
+    background-size:cover;
+    background-position:center center;}
+  .box5{
+  background:url('/src/images/project5.png');
+    background-size:cover;
+    background-position:center center;}
+  .box6{
+  background:url('/src/images/project6.png');
+    background-size:cover;
+    background-position:center center;}
+  .box7{
+  background:url('/src/images/project7.png');
+    background-size:cover;
+    background-position:center center;}
+  
+  .pslider [class*="box"] {
+  /*   float: left; */
+    overflow: hidden;
+    border-radius:20px;
+    transition: all 1s cubic-bezier(0.68, -0.6, 0.32, 1.6);
+      position:absolute;
+  }
+  .pslider [class*="box"]:nth-child(7),
+  .pslider [class*="box"]:nth-child(1) {
+    width: 100vh;
+    height: 60vh;
+    transform: scale(0.2) translate(-50%,-50%);
+    top: 10%;
+    z-index:1;
+  }
+  .pslider [class*="box"]:nth-child(2),
+  .pslider [class*="box"]:nth-child(6) {
+    width: 100vh;
+    height: 60vh;
+    transform: scale(0.4) translate(-50%,-50%);
+    top: 20%;
+    z-index:2;
+  }
+  .pslider [class*="box"]:nth-child(3),
+  .pslider [class*="box"]:nth-child(5) {
+    width: 100vh;
+    height: 60vh;
+    transform: scale(0.6) translate(-50%,-50%);
+    top: 30%;
+    z-index:3;
+  }
+  .pslider [class*="box"]:nth-child(4) {
+    width: 60vw;
+    height: 60vh;
+    border: 2px solid #7843e9;
+    color: #fff;
+    transform: scale(1) translate(-50%,-50%);
+    top: 50%;
+    z-index:4;
+  }
+  .pslider [class*="box"]:nth-child(1){
+    left:-13%;}
+  .pslider [class*="box"]:nth-child(2){
+    left:-5%;}
+  .pslider [class*="box"]:nth-child(3){
+    left:10%;}
+  .pslider [class*="box"]:nth-child(4){
+    left:50%;}
+  .pslider [class*="box"]:nth-child(5){
+    left:71%;}
+  .pslider [class*="box"]:nth-child(6){
+    left:85%;}
+  .pslider [class*="box"]:nth-child(7){
+    left:100%;}
+  .pslider .firstSlide {
+      -webkit-animation:  firstChild 1s;
+      animation:  firstChild 1s;
+  }
+  /*Animation for buyers landing page slider*/
+  @-webkit-keyframes firstChild {
+      0% {left:100%; transform: scale(0.2) translate(-50%,-50%);}
+      100% {left: -13%; transform: scale(0.2) translate(-50%,-50%);}
+  }
+  @keyframes firstChild {
+     0% {left:100%; transform: scale(0.2) translate(-50%,-50%);}
+      100% {left: -13%; transform: scale(0.2) translate(-50%,-50%);}
+  }
