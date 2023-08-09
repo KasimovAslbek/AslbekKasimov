@@ -1,9 +1,5 @@
 
 
-/* Typography =======================*/
-
-/* Headings */
-
 /* Main heading for card's front cover */
 .card-front__heading {
   font-size: 1.5rem;
@@ -142,11 +138,6 @@
 /* Layout Structure=========================================*/
 
 .main {
-  background: linear-gradient(
-    to bottom right,
-    #eee8dd,
-    #e3d9c6
-  );
   display: flex;
   flex-direction: column;
   justify-content: center;
