@@ -16,9 +16,7 @@ function Navbar() {
                     <li><Link className='hover:text-[#7843e9] transition-color duration-300 ease-in-out cursor-pointer' to="home"  smooth={true}  duration={800} >Home</Link></li>
                     <li><Link className='hover:text-[#7843e9] transition-color duration-300 ease-in-out cursor-pointer' to="skills"  smooth={true}  duration={800} >Skills</Link></li>
                     <li><Link className='hover:text-[#7843e9] transition-color duration-300 ease-in-out cursor-pointer' to="projects"  smooth={true}  duration={800} >Projects</Link></li>
-
-                    <li><a className='hover:text-[#7843e9] transition-color duration-300 ease-in-out' href="https://www.example.com">About</a></li>
-                    <li><a className='hover:text-[#7843e9] transition-color duration-300 ease-in-out' href="https://www.example.com">Contact</a></li>
+                    <li><Link className='hover:text-[#7843e9] transition-color duration-300 ease-in-out cursor-pointer' to="about"  smooth={true}  duration={800} >About</Link></li>
                 </ul>
                 <div className='md:hidden' >
                     <svg className={`cursor-pointer ${menuOpen ? 'hidden' : ''}`} onClick={() => setMenuOpen(!menuOpen)} xmlns="http://www.w3.org/2000/svg" width="24" height="14" viewBox="0 0 24 14" fill="none">
@@ -35,8 +33,7 @@ function Navbar() {
                 <li className='border-t w-full py-5 '><Link className='mr-4 sm:mr-6  cursor-pointer   hover:text-[#7843e9] transition-color duration-300 ease-in-out' to="home"  smooth={true}  duration={800} onClick={() => setMenuOpen(!menuOpen)}>Home</Link></li>
                 <li className='border-t w-full py-5 '><Link className='mr-4 sm:mr-6  cursor-pointer   hover:text-[#7843e9] transition-color duration-300 ease-in-out' to="skills"  smooth={true}  duration={800} onClick={() => setMenuOpen(!menuOpen)}>Skills</Link></li>
                 <li className='border-t w-full py-5 '><Link className='mr-4 sm:mr-6  cursor-pointer   hover:text-[#7843e9] transition-color duration-300 ease-in-out' to="projects"  smooth={true}  duration={800} onClick={() => setMenuOpen(!menuOpen)}>Projects</Link></li>
-                <li className='border-t w-full py-5 '><a className='mr-4 sm:mr-6     hover:text-[#7843e9] transition-color duration-300 ease-in-out' href="https://www.example.com">About</a></li>
-                <li className='border-t w-full py-5 '><a className='mr-4 sm:mr-6     hover:text-[#7843e9] transition-color duration-300 ease-in-out' href="https://www.example.com">Contact</a></li>
+                <li className='border-t w-full py-5 '><Link className='mr-4 sm:mr-6  cursor-pointer   hover:text-[#7843e9] transition-color duration-300 ease-in-out' to="about"  smooth={true}  duration={800} onClick={() => setMenuOpen(!menuOpen)}>About</Link></li>
             </ul>
         </div>
     </div>

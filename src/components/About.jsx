@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-scroll';
 import './styles/about.css'
 import chess from '../images/chess.svg'
 import traveling from '../images/traveling.svg'
@@ -14,8 +15,25 @@ import generalsVideo from '../images/generals.mp4'
 
 function About() {
   return (
-    <main className="main">
-    <section className="card-area flex gap-20">
+    <div id='about' className='max-w-main  mx-4  sm:mx-11  lg:mx-24 2xl:mx-auto pt-40'>
+        <div>
+           <h2  className='text-center text-3xl sm:text-4xl 2xl:text-5xl  min-[2500px]:text-6xl  font-bold'>About me</h2>
+            <div className='h-3 w-16 bg-[#7843e9] rounded-full mx-auto mt-4 mb-10 md:mb-20'></div>
+            <div className='text-xl sm:text-2xl 2xl:text-3xl min-[2500px]:text-4xl  text-[#666] space-y-7 lg:w-2/3 mx-auto mb-20'>
+                <p>You got acquainted with my skills in the section <Link className='text-blue-500 cursor-pointer' to="skills"  smooth={true}  duration={800} >above</Link>. You can get to know my personality in this section.</p>
+                <p>I enjoy listening to <Link className='text-blue-500 font-bold cursor-pointer' to='hobby' smooth={true}  duration={800}>traveling, going for long walks, playing chess and computer games</Link>.</p>
+                <p>I worked in public administration bodies for more than 6 years. So I think my <span className='text-[#7843e9] font-bold'>communication skills</span> are very good.</p>
+                <p>Initially, I earned a <span className='text-red-500 font-bold'>bachelor's degree in law</span>. I changed my field because of my strong interest in computer programming.</p>
+                <p>I am currently freelancing on <a className='text-green-500 cursor-pointer font-bold' href="https://www.upwork.com/freelancers/~0150385c1c881151ea"  >Upwork</a>. In addition, I am the founder of a start-up in the field of legal services.</p> 
+            </div>
+
+
+        </div> 
+        <div className='hidden sm:block'>
+        <h2 id='hobby' className='text-center text-3xl sm:text-4xl 2xl:text-5xl  min-[2500px]:text-6xl  font-bold mt-20'>My hobbies</h2>
+        <div className='h-3 w-16 bg-[#7843e9] rounded-full mx-auto mt-4 mb-20'></div>
+        <main className="main">
+        <section className="card-area grid grid-cols-1 lg:grid-cols-2 2xl:flex gap-8 2xl:gap-20 mb-44">
         {/* Card: City */}
         <section className="card-section">
             <div className="card">
@@ -189,15 +207,19 @@ function About() {
                             <p class="inside-page__text">
                                 It is a strategic computer game of virtual warfare and conquest.
                             </p>
-                            <a href="https://www.youtube.com/watch?v=CNi7dNw6TW8" class="inside-page__btn inside-page__btn--camping">View deals</a>
+                            <a href="https://www.youtube.com/watch?v=CNi7dNw6TW8" class="inside-page__btn inside-page__btn--camping">View video</a>
                         </div>
                     </div>
                 </div>
         </section>
 
-    </section>
+        </section>
 
-</main>
+        </main>
+        </div>
+    </div>
+        
+    
   )
 }
 
