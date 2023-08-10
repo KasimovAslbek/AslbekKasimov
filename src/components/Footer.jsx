@@ -12,7 +12,7 @@ import telegram from '../images/telegram.png'
 
 function Footer() {
   return (
-    <div className='bg-[#000] text-[#fff] '>
+    <div id='contact' className='bg-[#000] text-[#fff] '>
         <div className='flex flex-col-reverse  sm:flex-row justify-between max-w-main  mx-4  sm:mx-11  lg:mx-24 2xl:mx-auto py-14 sm:py-20 border-b-4'>
         <div className='lg:w-2/5'>
             <h2 className='text-2xl font-bold mb-5'>ASLBEK KASIMOV</h2>
